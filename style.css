@@ -1,0 +1,63 @@
+body{
+    background: rgba(58, 54, 54, 0.808);
+     }
+        #container{
+            margin-right: 100px;
+            margin-left:100px;
+        }
+        .header{
+            text-align:center;
+            padding:40px;
+            top: 5px;
+            margin:10px;
+            background: rgb(236, 230, 230)
+        }
+         #art{
+            text-align:center;
+            width:300px;
+            padding:20px;
+            margin:10px;
+            bottom:0px;
+            background:rgb(58, 54, 54, 0.808);
+         }
+         #hhh{
+            text-align:center;
+            width:200px;
+            padding:20px;
+            margin:10px;
+             background:rgb(236, 230, 230)
+         }
+         #sec{
+            text-align:center;
+            width:410px;
+            padding:40px;
+            margin:20px;
+            margin-left:0px;
+            line-height: 0px;
+            float:left;
+            background: rgb(236, 230,230)
+        } 
+        #aside{
+            width:27%;
+            text-align:center;
+            padding:110px;
+            margin:20px;
+            margin-right:0px;
+            float:right;
+            background:rgb(236, 230, 230)
+        }
+        #paragraph{
+            text-align:center;
+            width:200px;
+            padding:20px;
+            margin:10px;       
+            background:rgb(236, 230, 230) 
+        }
+       #foot{
+            clear: both;
+            text-align:center;
+            padding:40px;
+            background-color:rgb(236, 230, 230);
+            width: 
+        }
+      
