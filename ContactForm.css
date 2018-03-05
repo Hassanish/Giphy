@@ -1,0 +1,70 @@
+
+
+#walpaper{
+    background-color: #cccccc;
+    margin:50px;
+    margin-top:0px;
+    padding:10px;
+    padding-top:0px;
+    width:960px;
+    
+}
+
+#container{
+	background-color: #4aaaa5
+
+	}
+	.header{
+        float:left;
+        
+        
+	}
+	.mmo{
+        text-align: right;
+    }
+
+.maincontain {
+   border-style: solid;
+   border-width: 1px;
+   border-color: #ddd;
+   background-color: #ffffff;
+   padding: 10px 25px 20px;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 4px;  
+    border: 10px solid #ccc; 
+    border-radius: 20px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+
+
+input[type=submit] {
+    background-color: rgba(156, 53, 177, 0.918);
+    color: rgb(12, 12, 12);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container{
+    border-radius: 60px;
+    background-color: #dddddd;
+    padding: 10px;
+}
+input[type=submit]:hover {
+    background-color: #afd30fad;
+}
+@media screen and (max-width: 760px) {
+                body{
+                    background-color: rgb(211, 9, 9);
+                }
+                .wrapper{
+                    width: 600px;
+                }
+
+
