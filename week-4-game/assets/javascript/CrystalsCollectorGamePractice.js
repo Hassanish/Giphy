@@ -20,7 +20,7 @@ $(document).ready(function() {
                      }
             crystals = ['file:///C:/Users/sinyeiman/Pictures/RedCrystal.png.docx.png',
             'BlueCrystal.png.docx.png',
-            '',
+            'YellowCrystal.png.docx.png',
             'GreenCrystal.png.docx.png'];            
         console.log(numbers);       
         for (i = 0; i < numbers.length; i++) {
