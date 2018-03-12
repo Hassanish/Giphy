@@ -1,0 +1,58 @@
+.jumbotron {
+    width: 75%;
+    background-color:blueviolet !important;
+    border:solid;
+}
+h1{
+	background-color: orange;
+	display:inline-block;
+}
+#box{
+	background-color: #b2dd7b;
+}
+#yyy{
+	background-color: #0e8d2e;
+	display: inline-block;
+    padding-right: 180px;
+    padding-top:2px;
+}
+.Results {
+	background-color: rgb(3, 169, 244);
+    display: inline-block;
+    padding-right:25px;
+}
+
+
+#crystals{
+	margin-top: 5px;
+    margin-bottom:5px;
+}
+
+.EachCrystal {
+	height: 50px;
+	margin: 25px
+}
+
+#YourTotalScore{
+    background-color: #009688;
+	display: inline;
+	padding-bottom: 20px;
+}
+#winning{
+    background-color: yellowgreen;
+    padding:5px;
+    border:ridge;
+}
+#losser{
+    background-color:maroon;
+    padding:5px;
+    border:ridge;
+}
+
+#Guesses{
+	background: #009688;
+	display: inline;
+    padding: 10px;
+    clear:both;
+	
+}
