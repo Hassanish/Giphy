@@ -8,22 +8,23 @@ $(document).ready(function() {
    
     Start();
     Reset();
+    
     function Start () {
         var numbers = []
             while(numbers.length < 4){
               var randomnumber = Math.floor((Math.random()* 11) + 1);
-             var randomguesses = false;
+                var randomguesses = false;
                     for (var i=0; i< numbers.length; i++){ 
                         if (numbers[i] == randomnumber){
                             rundomguesses = true;}}
-                            if(!randomguesses)numbers[numbers.length]=randomnumber;
+                               if(!randomguesses)numbers[numbers.length]=randomnumber;
                      }
-            crystals = ['file:///C:/Users/sinyeiman/Pictures/RedCrystal.png.docx.png',
+    crystals = ['RedCrystal.png.docx.png',
             'BlueCrystal.png.docx.png',
             'YellowCrystal.png.docx.png',
             'GreenCrystal.png.docx.png'];            
-        console.log(numbers);       
-        for (i = 0; i < numbers.length; i++) {
+     console.log(numbers);       
+       for (i = 0; i < numbers.length; i++) {
             var Crystall = $('<img>');
             Crystall.attr('data-num', numbers[i]);
             Crystall.attr('src', crystals[i]);
@@ -44,16 +45,15 @@ $(document).ready(function() {
             userRandomCounts = userRandomCounts + parseInt($(this).data('num'));
            
             $('#TScore').text(userRandomCounts);
-
             if (userRandomCounts == numberToGuess){
-              $('#Results').text('Yee you won!');
-              wins ++;
-              $('#winning').text(wins);
-              alert("You won!"); 
-              console.log(wins)
-              $('#crystals').empty();
-              Start();
-              Reset();
+            $('#Results').text('Yee you won!');
+            wins ++;
+            $('#winning').text(wins);
+            alert("You won!"); 
+            console.log(wins)
+            $('#crystals').empty();
+            Start();
+            Reset();
                 
             } else if (userRandomCounts> numberToGuess){
                 $('#Results').text('You lose!')
@@ -65,7 +65,6 @@ $(document).ready(function() {
                 $('#crystals').empty();
                 Start();
                 Reset();
-               
             }
         });
     }
