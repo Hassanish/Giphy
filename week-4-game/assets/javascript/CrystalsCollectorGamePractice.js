@@ -21,7 +21,7 @@ $(document).ready(function() {
                      }
     crystals = ['https://github.com/Hassanish/HW-Wireframe/blob/master/week-4-game/assets/images/RedCrystal.png.docx.png',
             'https://github.com/Hassanish/HW-Wireframe/blob/master/week-4-game/assets/images/BlueCrystal.png.docx.png',
-            'https://github.com/Hassanish/HW-Wireframe/blob/master/week-4-game/assets/images/GreenCrystal.png.docx.png',
+            'https://github.com/Hassanish/HW-Wireframe/blob/master/week-4-game/assets/images/YellowCrystal.png.docx.png',
             'https://github.com/Hassanish/HW-Wireframe/blob/master/week-4-game/assets/images/GreenCrystal.png.docx.png'];            
      console.log(numbers);       
        for (i = 0; i < numbers.length; i++) {
