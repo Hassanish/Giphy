@@ -196,14 +196,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
             }
         }
 
-        // show number of correct answers out of total
         resultsContainer.innerHTML = 'Correct answers= '+ numCorrect + ' out of ' + questions.length;
     }
 
-    // show questions right away
+   
     showQuestions(questions, quizContainer);
     
-    // on submit, show results
+   
     submitButton.onclick = function(){
         feedback(questions, quizContainer, resultsContainer);
     }
