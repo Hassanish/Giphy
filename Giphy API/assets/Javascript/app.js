@@ -44,7 +44,7 @@ function ttButtons(){
 		});
 	 });
    } 
-//Function accesses "data-state" attribute and depending on status, changes image source to "data-animate" or "data-still"          
+//Function accesses "data-image" attribute and depending on status, changes image source to "data-animate" or "data-still"          
 $(document).on("click", function() {
 	var image = $(this).attr("data-image");
 	       if (image === "still") {
