@@ -1,5 +1,6 @@
 var VehicleType = ["Toyota", "Ford", "chevy", "Honda", "Nissan", "Mitsubishi", "Suzuki", "Volkswagen", "Infiniti", "Fiat", "Kia", "Hyundai", "Mazda", "Subaru", "GMC", "Volv", "BMW"];
-
+// Creating Functions & Methods
+// Function that displays all gif buttons
 
 //creates buttons
 function ttButtons(){
@@ -11,10 +12,11 @@ function ttButtons(){
 
 	//displays gifs on click
 	$('.inputs').on('click', function(){
-		$('#show').empty();
+		$('#show').empty();// erasing anything in this div id so that it doesnt keep any from the previous click
 
 		var vehicles = $(this).data('name');
 		var giphyURL = "http://api.giphy.com/v1/gifs/search?&q=vehicles+" + vehicles + "&api_key=dc6zaTOxFJmzC&limit=10";
+		console.log(giphyURL); // displays the constructed url
     $.ajax({
       url: giphyURL,
        method: 'GET'
@@ -32,8 +34,7 @@ function ttButtons(){
       			
 	var xRating = value.rating;
 	if(xRating == ''){xRating = 'unrated';}
-    var rating = $('<p>').text('Rated: '+ xRating).addClass('ratingStyle');
-					
+    var rating = $('<p>').text('Rated: '+ xRating).addClass('ratingStyle');				
 	Gif= $('<img>').attr('src', animated).attr('animated', animated).attr('paused', paused).addClass('image');
 		var Display = $('<button>').append(rating, Gif);
 				$('#show').append(Display);
@@ -42,19 +43,19 @@ function ttButtons(){
 			});
 		});
 	 });
-   }
-              $(document).on("click", function() {
-	                   
-	                      var image = $(this).attr("src");
-	                          
-	                               if (src === "animated") {
-	                                 
-	                                   $(this).attr("src", "paused");
-								   } else {
-                                          	  $(this).attr("src", $(this).attr("data-still"));
-	                                          $(this).attr("data-still", "still");
-	                                          }
-                                              });
+   } 
+//Function accesses "data-state" attribute and depending on status, changes image source to "data-animate" or "data-still"          
+$(document).on("click", function() {
+	var image = $(this).attr("data-image");
+	       if (image === "still") {
+	               $(this).attr("src", $(this).attr("data-animate"));
+		               $(this).attr("data-image", "animate");   
+				       }				   
+		      else {
+                           $(this).attr("src", $(this).attr("data-still"));
+	                   $(this).attr("data-image", "still");
+	                              }
+                                      });
 
                                  
   $('#add-vehicle').on('click', function(){
