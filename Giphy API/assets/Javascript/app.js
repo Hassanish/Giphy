@@ -23,6 +23,7 @@ function ttButtons(){
 
 
     .done(function(response){
+	     console.log(response); // console test to make sure something returns
 		var	feedback = response.data;
 			$.each(feedback, function(index,value){
 				animated= value.images.original.url;
